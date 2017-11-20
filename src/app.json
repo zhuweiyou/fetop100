@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "page/index/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "前端TOP100",
+    "navigationBarTextStyle": "black"
+  }
+}
