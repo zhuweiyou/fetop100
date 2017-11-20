@@ -1,37 +1,36 @@
 <view class="loading" hidden="{{rankList.length > 0}}">
-    <view class="loading">
-        <view class="loading__el"></view>
-    </view>
+  <view class="loading">
+    <view class="loading__el"></view>
+  </view>
 </view>
 
 <view class="rank" hidden="{{rankList.length <= 0}}">
-    <view class="rank__banner">
-        <view class="rank__title">流行趋势排行</view>
-        <view class="rank__item rank__item--first">
-            <image lazy-load="true" class="rank__icon rank__icon--first" src="{{rankList[0].icon}}" />
-            <view class="rank__info">
-                <view class="rank__name">{{rankList[0].name}}</view>
-                <view class="rank__detail">{{rankList[0].detail}}</view>
-            </view>
-        </view>
+  <view class="rank__banner">
+    <view class="rank__title">流行趋势排行</view>
+    <view class="rank__item rank__item--first">
+      <image lazy-load="true" class="rank__icon rank__icon--first" src="{{rankList[0].icon}}" />
+      <view class="rank__info">
+        <view class="rank__name">{{rankList[0].name}}</view>
+        <view class="rank__detail">{{rankList[0].detail}}</view>
+      </view>
     </view>
-    <view class="rank__list">
-        <view class="rank__item {{index === rankList.length - 1 ? 'rank__item--last' : ''}}"
-              wx:for="{{rankList}}"
-              wx:for-item="rank"
-              wx:for-index="index"
-              wx:key="id"
-              wx:if="{{index > 0}}"
-              data-index="{{index}}"
-              bindtap="tapRankItem"
-        >
-            <view class="rank__no">{{index + 1}}</view>
-            <image lazy-load="true" class="rank__icon" src="{{rank.icon}}" />
-            <view class="rank__info">
-                <view class="rank__name">{{rank.name}}</view>
-                <view class="rank__detail {{rank.open ? '' : 'rank__detail--close'}}">{{rank.detail}}</view>
-            </view>
-        </view>
+  </view>
+  <view class="rank__list">
+    <view class="rank__item {{index === rankList.length - 1 ? 'rank__item--last' : ''}}"
+          wx:for="{{rankList}}"
+          wx:for-item="rank"
+          wx:for-index="index"
+          wx:key="id"
+          wx:if="{{index > 0}}"
+          data-index="{{index}}"
+          bindtap="tapRankItem">
+      <view class="rank__no">{{index + 1}}</view>
+      <image lazy-load="true" class="rank__icon" src="{{rank.icon}}" />
+      <view class="rank__info">
+        <view class="rank__name">{{rank.name}}</view>
+        <view class="rank__detail {{rank.open ? '' : 'rank__detail--close'}}">{{rank.detail}}</view>
+      </view>
     </view>
-    <view class="rank__tip">数据来源 www.awesomes.cn</view>
+  </view>
+  <view class="rank__tip">数据来源 www.awesomes.cn</view>
 </view>

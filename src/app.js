@@ -1,5 +1,5 @@
 App({
-    onLaunch () {
+  onLaunch () {
 
-    }
+  }
 })

@@ -1,138 +1,138 @@
 page {
-    background: #f7f8fa;
+  background: #f7f8fa;
 }
 
 .loading {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .loading__el {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    border: 3px solid #60bed8;
-    border-top-color: transparent;
-    animation: loading__el 1s infinite linear;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #60bed8;
+  border-top-color: transparent;
+  animation: loading__el 1s infinite linear;
 }
 
 @keyframes loading__el {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .rank__banner {
-    background-image: linear-gradient(135deg, #79f1a4, #0e5cad);
-    color: #fff;
-    padding: 0 15px;
+  background-image: linear-gradient(135deg, #79f1a4, #0e5cad);
+  color: #fff;
+  padding: 0 15px;
 }
 
 .rank__title {
-    font-size: 28px;
-    text-align: center;
-    padding: 15px;
+  font-size: 28px;
+  text-align: center;
+  padding: 15px;
 }
 
 .rank__list {
-    padding: 0 15px 15px;
+  padding: 0 15px 15px;
 }
 
 .rank__item {
-    padding: 15px 0;
-    border-bottom: 1px dashed #ddd;
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    color: #4e4f54;
+  padding: 15px 0;
+  border-bottom: 1px dashed #ddd;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #4e4f54;
 }
 
 .rank__item--first {
-    padding: 15px;
-    text-align: center;
-    overflow: hidden;
-    background-color: rgba(8, 105, 132, .52);
-    color: #60bed8;
-    border: 0;
-    flex-direction: column;
+  padding: 15px;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(8, 105, 132, .52);
+  color: #60bed8;
+  border: 0;
+  flex-direction: column;
 }
 
 .rank__item--last {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 
 .rank__no {
-    width: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+  width: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .rank__icon {
-    width: 60px;
-    height: 60px;
-    background: #f3f3f3;
+  width: 60px;
+  height: 60px;
+  background: #f3f3f3;
 }
 
 .rank__icon--first {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    animation: rank__icon--first 20s infinite linear;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  animation: rank__icon--first 20s infinite linear;
 }
 
 @keyframes rank__icon--first {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .rank__info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
 }
 
 .rank__name {
-    font-size: 18px;
-    font-weight: bold;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .rank__detail {
-    font-size: 14px;
-    word-break: break-all;
-    word-wrap: break-word;
+  font-size: 14px;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .rank__detail--close {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
 }
 
 .rank__tip {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    padding: 0 15px 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 0 15px 15px;
 }
