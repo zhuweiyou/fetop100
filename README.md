@@ -6,4 +6,4 @@
 
 线上小程序码 | 本地开发截图
 --- | ---
-<img src="wacode.jpg" alt="线上小程序码"> | <img width="320" src="screenshot.png" alt="本地开发截图">|
+<img src="https://user-images.githubusercontent.com/8413791/36058453-38a88bc2-0e5b-11e8-9fff-489bb96cbc70.png" alt="线上小程序码"> | <img src="https://user-images.githubusercontent.com/8413791/36058454-3d0fce96-0e5b-11e8-92c8-20aa5f33bd52.png" alt="本地开发截图">|
