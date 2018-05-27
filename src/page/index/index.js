@@ -2,30 +2,30 @@ import Rank from '../../service/rank'
 
 Page({
   data: {
-    rankList: []
+    rankList: [],
   },
-  onLoad () {
+  onLoad() {
     this.getData()
   },
-  getData () {
+  getData() {
     Rank.getList(rankList => {
-      this.setData({rankList})
+      this.setData({ rankList })
       wx.stopPullDownRefresh()
     })
   },
-  onPullDownRefresh () {
+  onPullDownRefresh() {
     this.getData()
   },
-  tapRankItem (event) {
+  tapRankItem(event) {
     const index = event.currentTarget.dataset.index
     const rankList = this.data.rankList
     rankList[index].open = !rankList[index].open
-    this.setData({rankList})
+    this.setData({ rankList })
   },
-  onShareAppMessage () {
+  onShareAppMessage() {
     return {
       title: 'TOP100的前端框架排名',
-      path: '/page/index/index'
+      path: '/page/index/index',
     }
-  }
+  },
 })
