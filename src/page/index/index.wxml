@@ -1,9 +1,3 @@
-<view class="loading" hidden="{{rankList.length > 0}}">
-  <view class="loading">
-    <view class="loading__el"></view>
-  </view>
-</view>
-
 <view class="rank" hidden="{{rankList.length <= 0}}">
   <view class="rank__banner">
     <view class="rank__title">流行趋势排行</view>
@@ -32,5 +26,5 @@
       </view>
     </view>
   </view>
-  <view class="rank__tip">数据来源 www.awesomes.cn</view>
+  <view class="rank__tip" bindtap="copyGithubUrl">{{githubUrl}}</view>
 </view>
