@@ -12,6 +12,6 @@
   <tr></tr>
   <tr>
     <td align="center"><img src="https://user-images.githubusercontent.com/8413791/36058453-38a88bc2-0e5b-11e8-9fff-489bb96cbc70.png"</td>
-    <td align="center"><img src="https://user-images.githubusercontent.com/8413791/36058454-3d0fce96-0e5b-11e8-92c8-20aa5f33bd52.png"</td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/8413791/56709304-1728b100-6753-11e9-844b-266565a74357.png"</td>
   </tr>
 </table>
