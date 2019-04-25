@@ -1,8 +1,7 @@
 <view class="rank" hidden="{{rankList.length <= 0}}">
   <view class="rank__banner">
-    <view class="rank__title">流行趋势排行</view>
     <view class="rank__item rank__item--first">
-      <image lazy-load="true" class="rank__icon rank__icon--first" src="{{rankList[0].icon}}" />
+      <image lazy-load class="rank__icon rank__icon--first" mode="aspectFill" src="{{rankList[0].icon}}" />
       <view class="rank__info">
         <view class="rank__name">{{rankList[0].name}}</view>
         <view class="rank__detail">{{rankList[0].detail}}</view>
@@ -15,14 +14,12 @@
           wx:for-item="rank"
           wx:for-index="index"
           wx:key="id"
-          wx:if="{{index > 0}}"
-          data-index="{{index}}"
-          bindtap="tapRankItem">
+          wx:if="{{index > 0}}">
       <view class="rank__no">{{index + 1}}</view>
-      <image lazy-load class="rank__icon" src="{{rank.icon}}" />
+      <image lazy-load class="rank__icon" mode="aspectFill" src="{{rank.icon}}" />
       <view class="rank__info">
         <view class="rank__name">{{rank.name}}</view>
-        <view class="rank__detail {{rank.open ? '' : 'rank__detail--close'}}">{{rank.detail}}</view>
+        <view class="rank__detail">{{rank.detail}}</view>
       </view>
     </view>
   </view>

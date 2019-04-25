@@ -5,13 +5,7 @@ page {
 .rank__banner {
   background-image: linear-gradient(135deg, #79f1a4, #0e5cad);
   color: #fff;
-  padding: 0 15px;
-}
-
-.rank__title {
-  font-size: 28px;
-  text-align: center;
-  padding: 15px;
+  padding: 15px 15px 0;
 }
 
 .rank__list {
@@ -23,7 +17,6 @@ page {
   border-bottom: 1px dashed #ddd;
   position: relative;
   display: flex;
-  align-items: center;
   background-color: #fff;
   color: #4e4f54;
 }
@@ -59,7 +52,7 @@ page {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   animation: rank__icon--first 20s infinite linear;
 }
 
@@ -91,13 +84,6 @@ page {
   font-size: 14px;
   word-break: break-all;
   word-wrap: break-word;
-}
-
-.rank__detail--close {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
 }
 
 .rank__tip {

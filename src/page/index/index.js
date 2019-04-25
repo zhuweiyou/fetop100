@@ -1,4 +1,4 @@
-import Rank from "../../service/rank";
+import { getRankList } from "../../common/api";
 
 Page({
   data: {
@@ -13,17 +13,11 @@ Page({
   },
   getData() {
     wx.showNavigationBarLoading();
-    Rank.getList(rankList => {
+    getRankList(rankList => {
       this.setData({ rankList });
       wx.stopPullDownRefresh();
       wx.hideNavigationBarLoading();
     });
-  },
-  tapRankItem(event) {
-    const index = event.currentTarget.dataset.index;
-    const rankList = this.data.rankList;
-    rankList[index].open = !rankList[index].open;
-    this.setData({ rankList });
   },
   copyGithubUrl() {
     wx.setClipboardData({ data: this.data.githubUrl });
